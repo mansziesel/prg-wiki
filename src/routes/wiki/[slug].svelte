@@ -2,10 +2,17 @@
 	import { gql } from 'graphql-request';
 	import client from '$lib/gqlClient';
 
-	export async function load({ params }) {
-		const query = gql`
+	export const load = async ({ fetch }) => {
+		const res = await fetch(
+			'https://api-eu-central-1.graphcms.com/v2/cl15ajjvgghuh01zaa62u11s3/master',
 			{
-				post(where: { slug: "${params.slug}" }) {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					query: `{
+				post(where: { slug: "test" }) {
 					title
 					date
 					content
@@ -20,18 +27,17 @@
 					coverImage {
 						url
 					}
-				}
+				}                }`
+				})
 			}
-		`;
-
-		const data = await client.request(query);
-
+		);
+		const { data } = await res.json();
 		return {
 			props: {
 				data
 			}
 		};
-	}
+	};
 </script>
 
 <script>
