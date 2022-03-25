@@ -29,5 +29,5 @@
 </script>
 
 <pre>
-    {JSON.stringify(data)}
+    {JSON.stringify(data, null, 4)}
 </pre>

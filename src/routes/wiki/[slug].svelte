@@ -4,13 +4,25 @@
 
 	export async function load({ params }) {
 		const query = gql`
-		{
-			post(where: { slug: "${params.slug}" }) {
-				title
-                description
+			{
+				post(where: { slug: "${params.slug}" }) {
+					title
+					date
+					content
+					description
+					tags
+					authors {
+						name
+						picture {
+							url
+						}
+					}
+					coverImage {
+						url
+					}
+				}
 			}
-		}
-	`;
+		`;
 
 		const data = await client.request(query);
 
@@ -23,10 +35,15 @@
 </script>
 
 <script>
+	import RichContent from '$lib/components/RichContent.svelte';
+
 	export let data;
 	console.log(data);
 </script>
 
 <pre>
-    {JSON.stringify(data)}
+    {JSON.stringify(data, null, 4)}
+
 </pre>
+
+<RichContent richContent={data.post.content} />
