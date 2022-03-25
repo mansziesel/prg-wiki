@@ -25,7 +25,6 @@
 
 <script>
 	export let data;
-	console.log(data);
 </script>
 
 {#each data.posts as post}

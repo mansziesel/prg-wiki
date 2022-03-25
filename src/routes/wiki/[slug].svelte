@@ -38,7 +38,6 @@
 	import RichContent from '$lib/components/RichContent.svelte';
 
 	export let data;
-	console.log(data);
 </script>
 
 <pre>
