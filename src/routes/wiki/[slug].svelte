@@ -38,7 +38,7 @@
 </script>
 
 <script>
-	import RichContent from '$lib/RichContent.svelte';
+	import MarkdownRenderer from '$lib/MarkdownRenderer.svelte';
 
 	export let data;
 </script>
@@ -48,4 +48,4 @@
 
 </pre>
 
-<RichContent richContent={data.post.content} />
+<MarkdownRenderer content={data.post.content} />

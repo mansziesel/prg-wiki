@@ -34,7 +34,7 @@
 </script>
 
 {#each data.projects as post}
-	<a href={`/assignments/${post.slug}`}>
+	<a sveltekit:prefetch href={`/assignments/${post.slug}`}>
 		<div>
 			<p>{post.title}</p>
 			<p>{post.description}</p>
