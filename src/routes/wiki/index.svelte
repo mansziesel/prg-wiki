@@ -32,7 +32,7 @@
 </script>
 
 {#each data.posts as post}
-	<a sveltekit:prefetch href={`/wiki/${post.slug}`}>
+	<a rel="prerender" sveltekit:prefetch href={`/wiki/${post.slug}`}>
 		<div>
 			<p>{post.title}</p>
 			<p>{post.description}</p>

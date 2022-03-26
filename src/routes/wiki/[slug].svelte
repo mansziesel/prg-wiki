@@ -48,4 +48,4 @@
 
 </pre>
 
-<MarkdownRenderer content={data.post.content} />
+<MarkdownRenderer source={data.post.content} />
