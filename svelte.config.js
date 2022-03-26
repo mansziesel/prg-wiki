@@ -3,6 +3,10 @@ import adapter from '@sveltejs/adapter-static';
 
 export default {
 	kit: {
+		browser: {
+			// hydrate: false,
+			router: false
+		},
 		adapter: adapter({
 			// default options are shown
 			pages: 'build',

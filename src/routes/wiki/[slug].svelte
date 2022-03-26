@@ -38,7 +38,7 @@
 </script>
 
 <script>
-	import RichContent from '$lib/components/RichContent.svelte';
+	import RichContent from '$lib/RichContent.svelte';
 
 	export let data;
 </script>
