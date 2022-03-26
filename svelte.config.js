@@ -5,7 +5,7 @@ export default {
 	kit: {
 		browser: {
 			// hydrate: false,
-			router: false
+			// router: false
 		},
 		adapter: adapter({
 			// default options are shown
