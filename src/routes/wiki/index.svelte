@@ -1,20 +1,24 @@
 <script context="module">
-	import { gql } from 'graphql-request';
-	import client from '$lib/gqlClient';
-
-	const query = gql`
-		{
-			posts {
-				slug
-				title
-				description
+	export const load = async ({ fetch }) => {
+		const res = await fetch(
+			'https://api-eu-central-1.graphcms.com/v2/cl15ajjvgghuh01zaa62u11s3/master',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					query: `{
+						posts {
+							slug
+							title
+							description
+						}
+					}`
+				})
 			}
-		}
-	`;
-
-	export const load = async () => {
-		const data = await client.request(query);
-
+		);
+		const { data } = await res.json();
 		return {
 			props: {
 				data

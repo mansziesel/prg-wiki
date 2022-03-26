@@ -1,7 +1,4 @@
 <script context="module">
-	import { gql } from 'graphql-request';
-	import client from '$lib/gqlClient';
-
 	export const load = async ({ fetch }) => {
 		const res = await fetch(
 			'https://api-eu-central-1.graphcms.com/v2/cl15ajjvgghuh01zaa62u11s3/master',
