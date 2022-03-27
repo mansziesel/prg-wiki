@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-{#each data.posts as post}
+<!-- {#each data.posts as post}
 	<a href={`/wiki/${post.slug}`}>
 		<div>
 			<p>{post.title}</p>
@@ -10,4 +10,8 @@
 		</div>
 	</a>
 	<br />
-{/each}
+{/each} -->
+
+<pre>
+    {JSON.stringify(data, null, 4)}
+</pre>

@@ -1,33 +1,29 @@
-export const get = async () => {
-	const res = await fetch(
-		'https://api-eu-central-1.graphcms.com/v2/cl15ajjvgghuh01zaa62u11s3/master',
+import { gql } from 'graphql-request';
+import client from '$lib/gqlClient';
+
+export const get = async ({ params }) => {
+	const query = gql`
 		{
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				query: `{
-                    post(where: { slug: "test" }) {
-					    title
-					    date
-				    	content
-					    description
-				    	tags
-					    authors {
-					    	name
-					    	picture {
-					    		url
-					    	}
-					    }
-					    coverImage {
-					    	url
-					    }
-				    }}`
-			})
+			posts(where: { slug: "${params.slug}" }) {
+				title
+				date
+				content
+				description
+				tags
+				authors {
+					name
+					picture {
+						url
+					}
+				}
+				coverImage {
+					url
+				}
+			}
 		}
-	);
-	const { data } = await res.json();
+	`;
+
+	const data = await client.request(query);
 
 	return {
 		body: {

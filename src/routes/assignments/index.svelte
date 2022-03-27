@@ -13,5 +13,5 @@
 {/each} -->
 
 <pre>
-{JSON.stringify(data, null, 4)}
+	{JSON.stringify(data, null, 4)}
 </pre>

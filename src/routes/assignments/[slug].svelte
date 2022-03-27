@@ -6,7 +6,6 @@
 
 <pre>
     {JSON.stringify(data, null, 4)}
-
 </pre>
 
-<MarkdownRenderer source={data.post.content} />
+<!-- <MarkdownRenderer source={data.post.content} /> -->
