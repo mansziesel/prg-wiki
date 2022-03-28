@@ -1,5 +1,5 @@
 <div>
-	<!-- <p>mans</p> -->
+	<p>prg-wiki</p>
 	<ul>
 		<li><a sveltekit:prefetch href="/">home</a></li>
 		<li><a sveltekit:prefetch href="/wiki">wiki</a></li>
