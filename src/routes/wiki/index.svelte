@@ -7,6 +7,7 @@
 		<div>
 			<p>{post.title}</p>
 			<p>{post.description}</p>
+			<img src={post.coverImage.url} alt="nice" />
 		</div>
 	</a>
 	<br />

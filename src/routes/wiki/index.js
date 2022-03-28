@@ -8,6 +8,9 @@ export const get = async () => {
 				slug
 				title
 				description
+				coverImage {
+					url
+				}
 			}
 		}
 	`;
