@@ -4,7 +4,7 @@ import client from '$lib/gqlClient';
 export const get = async ({ params }) => {
 	const query = gql`
 		{
-			posts(where: { slug: "${params.slug}" }) {
+			post(where: { slug: "${params.slug}" }) {
 				title
 				date
 				content

@@ -4,8 +4,7 @@ import client from '$lib/gqlClient';
 export const get = async () => {
 	const query = gql`
 		{
-			projects {
-				slug
+			assignments {
 				title
 				description
 			}
