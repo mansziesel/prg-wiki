@@ -40,6 +40,8 @@ export async function get() {
 					`<url>
             <loc>http://localhost:3000/assignemts/${item.slug}/</loc>
             <lastmod>${item.updatedAt}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.9</priority>
           </url>`.trim()
 				)
 				.join('')}
@@ -48,6 +50,8 @@ export async function get() {
 					`<url>
             <loc>http://localhost:3000/wiki/${item.slug}</loc>
             <lastmod>${item.updatedAt}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.0</priority>
           </url>`.trim()
 				)
 				.join('')}
