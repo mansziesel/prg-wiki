@@ -12,7 +12,9 @@ export async function get() {
 				slug
 				updatedAt
 			}
-		}
+			authors {
+				slug
+			}
 	`;
 
 	const res = await client.request(query);
