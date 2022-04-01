@@ -6,13 +6,11 @@
 </script>
 
 <Navbar />
-<main class="max-w-2xl mx-auto">
+<main class="max-w-3xl mx-auto">
 	<slot />
 </main>
 <Footer />
 
 <svelte:head>
 	<html lang="dutch" />
-	<meta name="description" content="A wiki page for programming" />
-	<title>PRG wiki</title>
 </svelte:head>

@@ -11,8 +11,6 @@
 	});
 
 	var output = marked(source);
-
-	// console.log(output);
 </script>
 
 <div>{@html output}</div>
