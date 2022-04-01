@@ -1,10 +1,12 @@
 <script>
 	import Navbar from '$lib/Navbar.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import '../global.css';
+	import 'highlight.js/styles/atom-one-light.css';
 </script>
 
 <Navbar />
-<main>
+<main class="max-w-2xl mx-auto">
 	<slot />
 </main>
 <Footer />

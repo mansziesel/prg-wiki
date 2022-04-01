@@ -5,10 +5,10 @@
 </script>
 
 <!-- <p>{data.post.authors.picture.url}</p> -->
-<img src={data.post.authors[0].picture.url} alt="" />
+<!-- <img src={data.post.authors[0].picture.url} alt="" /> -->
 
-<pre>
+<!-- <pre>
     {JSON.stringify(data, null, 4)}
-</pre>
+</pre> -->
 
-<!-- <MarkdownRenderer source={data.post.content} /> -->
+<MarkdownRenderer source={data.post.content} />

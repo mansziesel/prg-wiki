@@ -2,11 +2,11 @@
 	export let data;
 </script>
 
-<!-- <svelte:head>
-	<meta name="description" content="A wiki page for programming" />
-	<title>PRG wiki</title>
-</svelte:head> -->
+<svelte:head>
+	<meta name="description" content="Homepagina van de website" />
+	<title>Home | PRG wiki</title>
+</svelte:head>
 
-<pre>
-    {JSON.stringify(data, null, 4)}
-</pre>
+<p class="text-lg">Hallo!</p>
+
+<pre>{JSON.stringify(data, null, 4)}</pre>

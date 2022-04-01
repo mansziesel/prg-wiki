@@ -13,6 +13,6 @@
 	<br />
 {/each}
 
-<pre>
+<!-- <pre>
     {JSON.stringify(data, null, 4)}
-</pre>
+</pre> -->
