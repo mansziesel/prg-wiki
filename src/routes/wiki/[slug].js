@@ -5,13 +5,13 @@ export const get = async ({ params }) => {
 	const query = gql`
 		{
 			post(where: { slug: "${params.slug}" }) {
+				slug
 				authors {
 					name
 					slug
 					picture {
 						url
 					}
-				slug
 				}
 				coverImage {
 					url

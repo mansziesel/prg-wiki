@@ -1,6 +1,7 @@
 <script>
 	export let data;
-	console.log(data);
+
+	console.log(data.post.slug);
 </script>
 
 <meta property="og:image" content={data.post.openGraphImage.url} />
