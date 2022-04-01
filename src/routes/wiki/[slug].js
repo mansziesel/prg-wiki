@@ -6,11 +6,12 @@ export const get = async ({ params }) => {
 		{
 			post(where: { slug: "${params.slug}" }) {
 				authors {
-				name
+					name
+					slug
+					picture {
+						url
+					}
 				slug
-				picture {
-					url
-				}
 				}
 				coverImage {
 					url
