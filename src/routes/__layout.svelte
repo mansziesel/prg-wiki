@@ -8,3 +8,9 @@
 	<slot />
 </main>
 <Footer />
+
+<svelte:head>
+	<html lang="dutch" />
+	<meta name="description" content="A wiki page for programming" />
+	<title>PRG wiki</title>
+</svelte:head>
