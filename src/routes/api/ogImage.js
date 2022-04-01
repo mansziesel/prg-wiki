@@ -1,13 +1,10 @@
-export async function get({ url }) {
-	// `params.id` comes from [id].js
-	const ref = url.searchParams.get('ref') || 'none';
-	const test = url.searchParams.get('test') || 'test';
+export const get = async ({ url }) => {
+	const title = url.searchParams.get('title') || 'PRG Wiki';
+	const sub = url.searchParams.get('sub');
+	const tags = url.searchParams.get('tags');
+	const author = url.searchParams.get('author');
 
 	return {
-		body: { ref, test }
-	};
-
-	return {
-		status: 404
+		body: { title, sub, tags, author }
 	};
 }
