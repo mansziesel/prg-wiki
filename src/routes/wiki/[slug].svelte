@@ -1,15 +1,11 @@
 <script>
 	import MarkdownRenderer from '$lib/MarkdownRenderer.svelte';
-
+	import WikiItemMetadata from '$lib/WikiItemMetadata.svelte';
 	export let data;
 </script>
 
 <svelte:head>
-	<meta property="og:image" content={data.post.openGraphImage.url} />
-	<meta property="og:title" content={data.post.title} />
-	<meta property="og:description" content={data.post.description} />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
+	<WikiItemMetadata {data} />
 </svelte:head>
 
 <!-- <p>{data.post.authors.picture.url}</p>

@@ -10,7 +10,3 @@
 	<slot />
 </main>
 <Footer />
-
-<svelte:head>
-	<html lang="dutch" />
-</svelte:head>
