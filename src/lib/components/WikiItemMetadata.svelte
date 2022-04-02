@@ -18,20 +18,22 @@
 	<meta
 		property="og:image"
 		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post
-			.title}&tags={data.post.tags.join()}"
+			.title}&tags={data.post.tags.join()}&handle={data.post.authors[0].name}"
 	/>
 	<meta
 		name="twitter:image"
 		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post
-			.title}&tags={data.post.tags.join()}"
+			.title}&tags={data.post.tags.join()}&handle={data.post.authors[0].name}"
 	/>
 {:else}
 	<meta
 		property="og:image"
-		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&handle={data.post
+			.authors[0].name}"
 	/>
 	<meta
 		name="twitter:image"
-		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&handle={data.post
+			.authors[0].name}"
 	/>
 {/if}
