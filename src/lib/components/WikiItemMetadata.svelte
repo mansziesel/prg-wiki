@@ -1,6 +1,5 @@
 <script>
 	export let data;
-	console.log(data.post.tags);
 </script>
 
 <meta property="og:title" content={data.post.title} />
