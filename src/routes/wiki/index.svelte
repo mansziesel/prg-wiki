@@ -8,7 +8,7 @@
 		<div>
 			<p>{post.title}</p>
 			<p>{post.description}</p>
-			<img src={data.posts[0].coverImage.url} alt="nice" />
+			<img src={post.coverImage.url} alt="nice" />
 		</div>
 	</a>
 	<br />
