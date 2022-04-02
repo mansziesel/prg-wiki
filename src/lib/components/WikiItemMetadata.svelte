@@ -2,7 +2,6 @@
 	export let data;
 </script>
 
-<meta property="og:image" content={data.post.openGraphImage.url} />
 <meta property="og:title" content={data.post.title} />
 <meta property="og:description" content={data.post.description} />
 <meta property="og:image:width" content="1200" />
@@ -14,4 +13,25 @@
 <meta property="twitter:url" content={`https://prg-wiki.mziesel.com/wiki/${data.post.slug}`} />
 <meta name="twitter:title" content={data.post.title} />
 <meta name="twitter:description" content={data.post.description} />
-<meta name="twitter:image" content={data.post.openGraphImage.url} />
+
+{#if data.post.tags}
+	<meta
+		property="og:image"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&tags={data.post
+			.tags}"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&tags={data.post
+			.tags}"
+	/>
+{:else}
+	<meta
+		property="og:image"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}"
+	/>
+{/if}
