@@ -18,6 +18,7 @@ export const get = async ({ params }) => {
 				}
 				description
 				date
+				tags
 				title
 				content
 				openGraphImage {
