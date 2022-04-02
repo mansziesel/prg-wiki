@@ -1,5 +1,5 @@
 <script>
-	import MarkdownRenderer from '$lib/MarkdownRenderer.svelte';
+	import MarkdownRenderer from '$lib/components/MarkdownRenderer.svelte';
 
 	export let data;
 </script>

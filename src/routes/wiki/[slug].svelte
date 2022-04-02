@@ -1,6 +1,6 @@
 <script>
-	import MarkdownRenderer from '$lib/MarkdownRenderer.svelte';
-	import WikiItemMetadata from '$lib/WikiItemMetadata.svelte';
+	import MarkdownRenderer from '$lib/components/MarkdownRenderer.svelte';
+	import WikiItemMetadata from '$lib/components/WikiItemMetadata.svelte';
 	export let data;
 </script>
 
