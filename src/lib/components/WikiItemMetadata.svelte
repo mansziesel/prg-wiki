@@ -17,13 +17,13 @@
 {#if data.post.tags}
 	<meta
 		property="og:image"
-		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&tags={data.post
-			.tags}"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post
+			.title}&tags={data.post.tags.join()}"
 	/>
 	<meta
 		name="twitter:image"
-		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post.title}&tags={data.post
-			.tags}"
+		content="https://prg-wiki-og.mziesel.com/api/ogimage?title={data.post
+			.title}&tags={data.post.tags.join()}"
 	/>
 {:else}
 	<meta
