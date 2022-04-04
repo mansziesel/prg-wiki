@@ -6,9 +6,11 @@ img {
 	width: 400px;
 }
 
+/* zorg ervoor dat de scrolbarr altijd zichtbaar is, anders layout verspringinen */
 body {
 	overflow-y: scroll;
 }
+
 pre {
 	width: 100%;
 	background-color: #eeeef0;
@@ -16,4 +18,9 @@ pre {
 	padding: 20px;
 	text-overflow: ellipsis;
 	overflow-y: scroll;
+}
+
+/* alle <code> blocks die niet in een <pre> zitten */
+:not(pre) > code {
+	color: blue;
 }
