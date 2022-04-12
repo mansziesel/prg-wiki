@@ -10,3 +10,12 @@
 	<slot />
 </main>
 <Footer />
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+	pre,
+	code {
+		font-family: 'JetBrains Mono', monospace !important;
+	}
+</style>

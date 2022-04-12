@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 img {
 	width: 400px;
@@ -20,7 +21,12 @@ pre {
 	overflow-y: scroll;
 }
 
-/* alle <code> blocks die niet in een <pre> zitten */
+/* alle <code> blocks not in a <pre> */
 :not(pre) > code {
 	color: blue;
+}
+
+pre,
+code {
+	font-family: 'JetBrains Mono', monospace !important;
 }
