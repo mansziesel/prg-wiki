@@ -9,4 +9,4 @@
 
 <p class="text-lg">Hallo!</p>
 
-<pre>{JSON.stringify(data, null, 4)}</pre>
+<pre class="font-code">{JSON.stringify(data, null, 4)}</pre>
