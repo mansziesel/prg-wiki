@@ -14,7 +14,7 @@ body {
 
 pre {
 	width: 100%;
-	background-color: #eeeef0;
+	background-color: #212337;
 	margin: 1.5em 0 3em;
 	padding: 20px;
 	text-overflow: ellipsis;
@@ -29,4 +29,9 @@ pre {
 pre,
 code {
 	font-family: 'JetBrains Mono', monospace !important;
+	color: #edf5e1;
+}
+
+html {
+	background-color: #edf5e1;
 }
