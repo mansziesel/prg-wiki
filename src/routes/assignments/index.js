@@ -7,6 +7,8 @@ export const get = async () => {
 			assignments {
 				title
 				description
+				slug
+				tags
 			}
 		}
 	`;
