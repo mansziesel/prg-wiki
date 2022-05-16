@@ -1,14 +1,12 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
-$primary-dark: #81899b;
-$background-dark: #161b22;
-$text-dark: #dfa612;
+// $primary-dark: #81899b;
+// $background-dark: #161b22;
+// $text-dark: #dfa612;
+$red: red;
 
 :root {
-	--primary: #{$primary};
-	--accent: #{$accent};
-	--warn: #{$warn};
-
-	// Even though this looks like a Sass variable, it's valid CSS so it's not
-	// evaluated.
-	--consumed-by-js: $primary;
+	// --primary: #{$primary};
+	// --accent: #{$accent};
+	// --warn: #{$warn};
+	--red: #{$red};
 }
