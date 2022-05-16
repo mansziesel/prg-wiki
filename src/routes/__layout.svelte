@@ -1,9 +1,14 @@
 <script>
+	import { page } from '$app/stores';
 	import '../app.scss';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import 'highlight.js/styles/github-dark.css';
 </script>
+
+<svelte:head>
+	<title>prg wiki | {$page.url.pathname}</title>
+</svelte:head>
 
 <Navbar />
 <div id="content_wrapper">
@@ -12,8 +17,8 @@
 	</main>
 </div>
 <!-- Die footer kan me de kanker krijgen -->
-<!-- <Footer /> -->
 
+<!-- <Footer /> -->
 <style>
 	@media screen and (min-width: 961px) {
 		#content_wrapper {
