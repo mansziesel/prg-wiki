@@ -6,11 +6,10 @@
 <pre>{JSON.stringify(data, null, 4)}</pre>
 
 <ul>
-{#each data.assignment.tags as tag}
-<li>
-	
-</li>
-{/each}
+	{#each data.assignment.tags as tag}
+		<li />
+	{/each}
 </ul>
 
+<Tags tags={data.assignment.tags} />
 <MarkdownRenderer source={data.assignment.content} />

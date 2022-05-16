@@ -1,6 +1,6 @@
 <script>
+	import Tags from '$lib/components/TagsElement.svelte';
 	export let data;
-	console.log(data.posts[0].coverImage.url);
 </script>
 
 {#each data.posts as post}
@@ -8,10 +8,11 @@
 		<div>
 			<p>{post.title}</p>
 			<p>{post.description}</p>
+			<Tags tags={post.tags} />
 			<img src={post.coverImage.url} alt="nice" />
-		</div>
-	</a>
+		</div></a
+	>
 	<br />
 {/each}
 
-<pre>{JSON.stringify(data, null, 4)}</pre>
+<!-- <pre>{JSON.stringify(data, null, 4)}</pre> -->
