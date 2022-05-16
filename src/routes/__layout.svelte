@@ -6,29 +6,29 @@
 </script>
 
 <Navbar />
-<div id="wrapper">
+<div id="content_wrapper">
 	<main>
 		<slot />
 	</main>
 </div>
-<Footer />
+<!-- Die footer kan me de kanker krijgen -->
+<!-- <Footer /> -->
 
 <style>
 	@media screen and (min-width: 961px) {
-		#wrapper {
+		#content_wrapper {
 			width: 960px;
 			margin-left: auto;
 			margin-right: auto;
 		}
 	}
 	@media screen and (max-width: 960px) {
-		#wrapper {
+		#content_wrapper {
 			width: 100vh;
 		}
 	}
-	#wrapper {
+	#content_wrapper {
 		background-color: #0d1117;
-
 		padding: 10px;
 	}
 </style>

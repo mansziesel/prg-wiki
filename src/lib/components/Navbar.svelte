@@ -4,7 +4,7 @@
 	};
 </script>
 
-<div id="navbarlijn">
+<div id="nav_wrapper">
 	<div id="navbar" class="flex justify-between pb-4 flex-wrap">
 		<h1>prg-wiki</h1>
 		<ul class="flex gap-6 flex-wrap">
@@ -28,7 +28,7 @@
 </div>
 
 <style>
-	#navbarlijn {
+	#nav_wrapper {
 		background-color: #161b22;
 		max-width: auto;
 	}

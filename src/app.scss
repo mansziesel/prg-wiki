@@ -46,8 +46,10 @@ html {
 body {
 	height: 100vh;
 	overflow: scroll;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: flex-start;
+	// justify-content: flex-end;
 }
 * {
 	/* font-family: 'Source Sans Pro', sans-serif; */
@@ -62,4 +64,8 @@ p {
 h1 {
 	color: var(--font-color) !important;
 	font-size: 2em;
+}
+
+footer {
+	margin-top: auto;
 }
