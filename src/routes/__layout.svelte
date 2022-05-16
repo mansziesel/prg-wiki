@@ -5,27 +5,30 @@
 	import 'highlight.js/styles/github-dark.css';
 </script>
 
-<div id="navbar">
-	<Navbar />
-</div>
-
+<Navbar />
 <div id="wrapper">
-
-<main>
-	<slot />
-</main>
-<Footer />
+	<main>
+		<slot />
+	</main>
 </div>
+<Footer />
 
 <style>
+	@media screen and (min-width: 961px) {
+		#wrapper {
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	@media screen and (max-width: 960px) {
+		#wrapper {
+			width: 100vh;
+		}
+	}
+	#wrapper {
+		background-color: #0d1117;
 
-#wrapper {
-	background-color: #0d1117;
-	max-width: 1160px;
-	min-height: 100vh;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-}
-
+		padding: 10px;
+	}
 </style>

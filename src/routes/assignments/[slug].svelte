@@ -11,5 +11,5 @@
 	{/each}
 </ul>
 
-<Tags tags={data.assignment.tags} />
+<!-- <Tags tags={data.assignment.tags} /> -->
 <MarkdownRenderer source={data.assignment.content} />

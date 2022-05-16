@@ -28,22 +28,20 @@
 </div>
 
 <style>
+	#navbarlijn {
+		background-color: #161b22;
+		max-width: auto;
+	}
 
-#navbarlijn {
-	background-color: #161b22;
-	max-width:auto; 
-}
+	#navbar {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 960px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 
-#navbar {
-	margin-right: auto; 
-	margin-left: auto; 
-	max-width:1160px; 
-	padding-right: 10px; 
-	padding-left: 10px; 
-}
-
-ul {
-	padding-top: 15px;
-}
-
+	ul {
+		padding-top: 15px;
+	}
 </style>
