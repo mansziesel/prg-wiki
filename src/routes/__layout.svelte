@@ -7,7 +7,18 @@
 </script>
 
 <svelte:head>
-	<title>prg wiki | {$page.url.pathname}</title>
+	<title>{$page.url.pathname} | PRG wiki</title>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E299EV90FV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-E299EV90FV');
+	</script>
 </svelte:head>
 
 <Navbar />
