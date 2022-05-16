@@ -1,12 +1,28 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 // $primary-dark: #81899b;
-// $background-dark: #161b22;
-// $text-dark: #dfa612;
-$red: red;
+$background-dark: #010409;
+$background-light: #fff;
 
-:root {
-	// --primary: #{$primary};
-	// --accent: #{$accent};
-	// --warn: #{$warn};
-	--red: #{$red};
+// $text-dark: #dfa612;
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: #{$background-light};
+
+		// --primary: #{$primary-light};
+		// --accent: #{$accent-light};
+		// --warn: #{$warn-light};
+	}
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #{$background-dark};
+
+		// --primary: #{$primary-dark};
+		// --accent: #{$accent-dark};
+		// --warn: #{$warn-dark};
+	}
 }
