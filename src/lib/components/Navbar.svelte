@@ -4,8 +4,8 @@
 	};
 </script>
 
-<div class="flex justify-between pb-4 mx-auto max-w-3xl flex-wrap">
-	<p>prg-wiki</p>
+<div class="flex justify-between pb-4 flex-wrap">
+	<h1>prg-wiki</h1>
 	<ul class="flex gap-6 flex-wrap">
 		<li class="underline hover:decoration-dashed">
 			<a sveltekit:prefetch href="/">home</a>

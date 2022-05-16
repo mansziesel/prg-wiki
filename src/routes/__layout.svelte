@@ -21,6 +21,7 @@
 	min-height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px;
 }
 
 </style>
