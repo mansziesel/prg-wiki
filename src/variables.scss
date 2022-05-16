@@ -2,6 +2,8 @@
 // $primary-dark: #81899b;
 $background-dark: #010409;
 $background-light: #fff;
+$font-light: #010409;
+$font-dark: #fff;
 
 // $text-dark: #dfa612;
 
@@ -9,6 +11,7 @@ $background-light: #fff;
 @media (prefers-color-scheme: light) {
 	:root {
 		--background: #{$background-light};
+		--font-color: #{$font-light};
 
 		// --primary: #{$primary-light};
 		// --accent: #{$accent-light};
@@ -20,6 +23,7 @@ $background-light: #fff;
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #{$background-dark};
+		--font-color: #{$font-dark};
 
 		// --primary: #{$primary-dark};
 		// --accent: #{$accent-dark};

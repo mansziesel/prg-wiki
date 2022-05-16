@@ -41,6 +41,7 @@ code {
 
 html {
 	background-color: var(--background);
+	color: var(--font-color);
 }
 
 * {
@@ -50,6 +51,6 @@ html {
 
 // Main font text on website
 p {
-	color: $primary  !important;
+	color: var(--font-color)  !important;
 
 }
