@@ -1,5 +1,6 @@
 <script>
 	export let data;
+	console.log(data);
 </script>
 
 {#each data.assignments as assignment}
@@ -17,4 +18,4 @@
 	<br />
 {/each}
 
-<pre>{JSON.stringify(data, null, 4)}</pre>
+<!-- <pre>{JSON.stringify(data, null, 4)}</pre> -->
