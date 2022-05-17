@@ -20,14 +20,12 @@
 		gtag('config', 'G-E299EV90FV');
 	</script>
 </svelte:head>
-
 <Navbar />
 <div id="content_wrapper">
 	<main>
 		<slot />
 	</main>
 </div>
-<!-- Die footer kan me de kanker krijgen -->
 
 <!-- <Footer /> -->
 <style>
