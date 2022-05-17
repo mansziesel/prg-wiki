@@ -4,9 +4,13 @@ import adapter from '@sveltejs/adapter-vercel';
 
 export default {
 	kit: {
+		prerender: {
+			default: true
+		},
 		adapter: adapter({
-			prerender: true,
-			edge: true
+			// prerender: true
+			edge: true,
+			split: true
 		}),
 		vite: {
 			optimizeDeps: {
@@ -20,9 +24,6 @@ export default {
 					}
 				}
 			}
-		},
-		prerender: {
-			default: true
 		}
 	},
 

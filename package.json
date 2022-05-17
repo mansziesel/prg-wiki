@@ -12,21 +12,16 @@
 		"prepare": "svelte-kit sync",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"postbuild": "npx svelte-sitemap --domain https://prg-wiki.mziesel.com --change-freq monthly"
+		"oldpostbuild": "npx svelte-sitemap --domain https://prg-wiki.mziesel.com --change-freq monthly"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-static": "^1.0.0-next.29",
-		"@sveltejs/adapter-vercel": "^1.0.0-next.52",
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
-		"algoliasearch": "^4.13.0",
 		"autoprefixer": "^10.4.4",
 		"graphql": "^16.3.0",
 		"graphql-request": "^4.2.0",
 		"highlight.js": "^11.5.0",
 		"marked": "^4.0.12",
-		"playwright-aws-lambda": "^0.7.0",
-		"playwright-core": "^1.20.2",
 		"postcss": "^8.4.12",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
