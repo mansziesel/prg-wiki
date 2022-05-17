@@ -1,6 +1,6 @@
-import preprocess from 'svelte-preprocess';
 // svelte.config.js
 import adapter from '@sveltejs/adapter-vercel';
+import preprocess from 'svelte-preprocess';
 
 export default {
 	kit: {
