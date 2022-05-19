@@ -9,8 +9,8 @@ export default {
 		},
 		adapter: adapter({
 			// prerender: true
-			edge: true,
-			split: true
+			edge: true
+			// split: true
 		}),
 		vite: {
 			optimizeDeps: {
