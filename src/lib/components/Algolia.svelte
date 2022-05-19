@@ -1,7 +1,7 @@
-<!-- <script>
+<script>
 	import { searchMenuOpen } from '../stores/uiStateStore';
 	import { onMount } from 'svelte';
-	// import algoliasearch from 'algoliasearch';
+	import algoliasearch from 'algoliasearch';
 
 	let searchClient;
 	let index;
@@ -26,20 +26,20 @@
 	}
 </script>
 
-{#if $searchMenuOpen}
-	<div
-		id="container"
+<div>
+	<input
+		placeholder="Search Query"
 		on:click={() => {
-			$searchMenuOpen = false;
+			$searchMenuOpen = true;
 		}}
-	>
+		on:keyup={search}
+		bind:value={query}
+	/>
+</div>
+
+{#if $searchMenuOpen}
+	<div id="container">
 		<div id="child">
-			<h1>Svelte InstantSearch</h1>
-
-			<div>
-				<input type="text" bind:value={query} on:keyup={search} />
-			</div>
-
 			{#each hits as hit}
 				{hit.post_title}
 				{hit.permalink}
@@ -52,26 +52,15 @@
 <style>
 	#container {
 		/* z-index: 10; */
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
+		/* position: fixed; */
+		/* width: 100vw; */
+		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(8px);
-	}
-
-	#child {
-		margin: auto;
-		background-color: red;
-		width: 960px;
-		height: 60vh;
 	}
 
 	input {
 		color: #000;
 	}
-</style> -->
-
-test
+</style>

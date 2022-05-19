@@ -13,6 +13,7 @@
 		</div></a
 	>
 	<br />
+	<hr />
 {/each}
 
 <!-- <pre>{JSON.stringify(data, null, 4)}</pre> -->
