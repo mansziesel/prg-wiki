@@ -23,6 +23,7 @@
 
 <AlgoSearch />
 <Navbar />
+<br>
 <div id="content_wrapper">
 	<main>
 		<slot />
@@ -43,7 +44,8 @@
 		}
 	}
 	#content_wrapper {
-		background-color: #0d1117;
+		background-color: #1a1a1b;
+		border-radius: 4px;
 		padding: 10px;
 	}
 </style>

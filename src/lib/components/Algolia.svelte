@@ -1,7 +1,7 @@
-<!-- <script>
+<script>
 	import { searchMenuOpen } from '../stores/uiStateStore';
 	import { onMount } from 'svelte';
-	// import algoliasearch from 'algoliasearch';
+	import algoliasearch from 'algoliasearch';
 
 	let searchClient;
 	let index;
@@ -29,9 +29,6 @@
 {#if $searchMenuOpen}
 	<div
 		id="container"
-		on:click={() => {
-			$searchMenuOpen = false;
-		}}
 	>
 		<div id="child">
 			<h1>Svelte InstantSearch</h1>
@@ -72,6 +69,4 @@
 	input {
 		color: #000;
 	}
-</style> -->
-
-test
+</style>

@@ -33,7 +33,7 @@
 
 <style>
 	#nav_wrapper {
-		background-color: #161b22;
+		background-color: #1a1a1b;
 		max-width: auto;
 	}
 

@@ -7,6 +7,4 @@
 	<title>Home | PRG wiki</title>
 </svelte:head>
 
-<p class="text-lg">Hallo!</p>
-
 <pre class="font-code">{JSON.stringify(data, null, 4)}</pre>
