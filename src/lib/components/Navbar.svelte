@@ -1,7 +1,5 @@
 <script>
-	const searchMenuToggle = () => {
-		alert('to do ');
-	};
+	import { searchMenuOpen } from '../stores/uiStateStore';
 </script>
 
 <div id="nav_wrapper">
@@ -20,8 +18,14 @@
 			<li class="underline hover:decoration-dashed">
 				<a sveltekit:prefetch href="/resources">leermiddelen</a>
 			</li>
-			<li on:click={searchMenuToggle} id="searchbutton" class="underline hover:decoration-dashed">
-				Search
+			<li
+				on:click={() => {
+					$searchMenuOpen = !$searchMenuOpen;
+				}}
+				id="searchbutton"
+				class="underline hover:decoration-dashed"
+			>
+				search
 			</li>
 		</ul>
 	</div>
@@ -39,6 +43,10 @@
 		max-width: 960px;
 		padding-right: 10px;
 		padding-left: 10px;
+	}
+
+	#searchbutton:hover {
+		cursor: pointer;
 	}
 
 	ul {

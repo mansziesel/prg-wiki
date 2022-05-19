@@ -1,10 +1,17 @@
-import preprocess from 'svelte-preprocess';
 // svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
+import preprocess from 'svelte-preprocess';
 
 export default {
 	kit: {
-		adapter: adapter(),
+		prerender: {
+			default: true
+		},
+		adapter: adapter({
+			// prerender: true
+			// edge: true
+			// split: true
+		}),
 		vite: {
 			optimizeDeps: {
 				include: ['highlight.js', 'highlight.js/lib/core']
@@ -17,9 +24,6 @@ export default {
 					}
 				}
 			}
-		},
-		prerender: {
-			default: true
 		}
 	},
 
