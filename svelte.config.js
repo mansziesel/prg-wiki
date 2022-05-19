@@ -9,7 +9,7 @@ export default {
 		},
 		adapter: adapter({
 			// prerender: true
-			edge: true
+			// edge: true
 			// split: true
 		}),
 		vite: {
