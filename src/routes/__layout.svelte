@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import '../app.scss';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import 'highlight.js/styles/github-dark.css';
+	// import 'highlight.js/styles/github.css';
 </script>
 
 <svelte:head>
@@ -15,7 +15,6 @@
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-
 		gtag('config', 'G-E299EV90FV');
 	</script>
 </svelte:head>
@@ -41,7 +40,7 @@
 		}
 	}
 	#content_wrapper {
-		background-color: #0d1117;
+		background-color: var(--background);
 		padding: 10px;
 	}
 </style>

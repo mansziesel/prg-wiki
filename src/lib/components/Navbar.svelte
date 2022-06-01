@@ -1,13 +1,13 @@
 <script>
-	import { searchMenuOpen } from '../stores/uiStateStore';
-	import Search from '$lib/components/Algolia.svelte';
+	// import { searchMenuOpen } from '../stores/uiStateStore';
+	// import Search from '$lib/components/Algolia.svelte';
 </script>
 
 <div id="nav_wrapper">
 	<div id="navbar" class="flex justify-between pb-4 flex-wrap">
 		<h1>prg-wiki</h1>
 		<ul class="flex gap-6 flex-wrap">
-			<li><Search /></li>
+			<!-- <li><Search /></li> -->
 			<li class="underline hover:decoration-dashed">
 				<a sveltekit:prefetch href="/">home</a>
 			</li>
@@ -26,7 +26,7 @@
 
 <style>
 	#nav_wrapper {
-		background-color: #161b22;
+		background-color: var(--bg-accent);
 		max-width: auto;
 	}
 

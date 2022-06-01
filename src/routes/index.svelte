@@ -20,6 +20,8 @@
 				<img id={author.slug} src={author.picture.url} alt={author.name} />
 				<label for={author.slug}>{author.name}</label>
 			</a>
+			<br />
+			<br />
 		</li>
 	{/each}
 </ul>
