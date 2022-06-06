@@ -38,9 +38,9 @@
 		padding-left: 10px;
 	}
 
-	#searchbutton:hover {
+	/* #searchbutton:hover {
 		cursor: pointer;
-	}
+	} */
 
 	ul {
 		padding-top: 15px;
