@@ -1,20 +1,5 @@
-<script context="module">
-	/** @type {import('./__types/[slug]').Load} */ export async function load({ fetch }) {
-		const url = `/api/authorData.json`;
-		const response = await fetch(url);
-
-		return {
-			status: response.status,
-			props: {
-				res: response.ok && (await response.json())
-			}
-		};
-	}
-</script>
-
 <script>
-	export let res;
-	const data = res.data;
+	export let data;
 </script>
 
 <svelte:head>
@@ -25,7 +10,7 @@
 <div id="grad" class="w-full pt-16">
 	<h1 class="text-7xl  ">prg-wiki</h1>
 	<p class="text-lg">
-		Hallo!, dit is een wiki pagina waar je info kan vinden over het vak `programmeren`.
+		Hallo! Dit is een wiki pagina waar je info kan vinden over het vak programmeren.
 	</p>
 </div>
 
