@@ -9,6 +9,9 @@ export const get = async () => {
 				picture {
 					url
 				}
+				slug
+				intro
+				bio
 			}
 		}
 	`;

@@ -1,15 +1,11 @@
 <script>
 	import MarkdownRenderer from '$lib/components/MarkdownRenderer.svelte';
+	import Tags from '$lib/components/TagsElement.svelte';
+
 	export let data;
 </script>
 
-<pre>{JSON.stringify(data, null, 4)}</pre>
-
-<ul>
-	{#each data.assignment.tags as tag}
-		<li />
-	{/each}
-</ul>
-
-<!-- <Tags tags={data.assignment.tags} /> -->
-<MarkdownRenderer source={data.assignment.content} />
+<MarkdownRenderer source={data.assignment.description} />
+<Tags tags={data.assignment.tags} />
+<br />
+<hr />
