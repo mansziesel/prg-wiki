@@ -8,7 +8,7 @@ export default {
 			default: true
 		},
 		adapter: adapter({
-			// prerender: true
+			prerender: true
 			// edge: true
 			// split: true
 		}),
