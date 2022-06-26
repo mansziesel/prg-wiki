@@ -5,7 +5,7 @@
 
 <ul class="flex gap-1">
 	{#each tags as tag}
-		<li class="p-1 rounded-md inline-block">
+		<li class="p-1 rounded-md inline-block tag">
 			{tag}
 		</li>
 	{/each}

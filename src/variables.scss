@@ -1,20 +1,31 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 // $primary-dark: #81899b;
-$background-dark: #0d1117;
-$background-light: #fff;
-$font-dark: #fff;
-$font-light: #0d1117;
+$background-dark: #101010;
+$background-light: #f9f9fb;
 
+$font-dark: #e1e1e3;
+$font-light: #202020;
+
+$code-dark: #23242c;
+$code-light: #f3f3f5;
+
+$accent-dark: #99aaff;
+$accent-light: #3355ff;
+
+$bg-accent-dark: #101010;
+$bg-accent-light: #ffffff;
 // $text-dark: #dfa612;
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
 	:root {
 		--background: #{$background-light};
+		--bg-accent: #{$bg-accent-light};
+		--code: #{$code-light};
 		--font-color: #{$font-light};
+		--accent: #{$accent-light};
 
 		// --primary: #{$primary-light};
-		// --accent: #{$accent-light};
 		// --warn: #{$warn-light};
 	}
 }
@@ -23,7 +34,10 @@ $font-light: #0d1117;
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #{$background-dark};
+		--bg-accent: #{$bg-accent-dark};
+		--code: #{$code-dark};
 		--font-color: #{$font-dark};
+		--accent: #{$accent-dark};
 
 		// --primary: #{$primary-dark};
 		// --accent: #{$accent-dark};

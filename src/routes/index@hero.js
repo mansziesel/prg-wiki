@@ -5,6 +5,7 @@ export const get = async () => {
 	const query = gql`
 		{
 			authors {
+				slug
 				name
 				picture {
 					url
