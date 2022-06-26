@@ -30,7 +30,8 @@ pre {
 
 /* alle <code> blocks not in a <pre> */
 :not(pre) > code {
-	color: blue;
+	padding: 3px;
+	border-radius: 4px;
 }
 
 pre,

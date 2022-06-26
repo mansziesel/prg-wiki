@@ -14,6 +14,6 @@
 <style>
 	li {
 		background: var(--accent);
-		color: var(--text);
+		color: var(--background);
 	}
 </style>
