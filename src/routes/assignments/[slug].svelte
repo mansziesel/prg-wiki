@@ -9,3 +9,14 @@
 <Tags tags={data.assignment.tags} />
 <br />
 <hr />
+<span class="markdown">
+	<MarkdownRenderer source={data.assignment.content} />
+</span>
+
+<style global lang="scss">
+	.markdown {
+		li {
+			list-style: inside;
+		}
+	}
+</style>
