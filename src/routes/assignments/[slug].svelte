@@ -18,5 +18,9 @@
 		li {
 			list-style: inside;
 		}
+
+		p {
+			padding-bottom: 20px;
+		}
 	}
 </style>
